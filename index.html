@@ -1,0 +1,145 @@
+<!--
+  TypeRush 3D - A Typing Game
+  Created by Mohit Kumawat
+  Version: 1.0.0
+  License: MIT
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRush ⏩</title>
+    <style>
+        :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: dark;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+}
+
+h1 {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { text-shadow: 0 0 20px #00ffe1; transform: scale(1); }
+    50% { text-shadow: 0 0 40px #00ffe1; transform: scale(1.03); }
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 2rem;
+    color: #00ffe1;
+    text-shadow: 0 0 20px rgba(0, 255, 225, 0.3), 0 0 40px rgba(0, 255, 225, 0.2);
+}
+
+.button-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: 2px solid #00ffe1;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #00ffe1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: #00ffe1;
+    color: #0d0d0d;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 255, 225, 0.5), 0 0 40px rgba(0, 255, 225, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TypeRush 3D🚀🚀</h1>
+        <div class="button-container">
+            <button class="btn" id="practiceBtn">Practice</button>
+            <button class="btn" id="learnBtn">Learn</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('practiceBtn').addEventListener('click', () => {
+            window.location.href = 'practice/index.html';
+        });
+
+        document.getElementById('learnBtn').addEventListener('click', () => {
+            window.location.href = 'typing-learner/index.html';
+        });
+    </script>
+
+<div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+      "color": { "value": "#00ffe1" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.4 },
+      "size": { "value": 3 },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#00ffe1",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
+      },
+      "modes": {
+        "repulse": { "distance": 100 },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+</body>
+</html>
+
