@@ -37,7 +37,7 @@ class TypingTest {
         "The implementation of cryptocurrency blockchain technology revolutionizes financial transactions worldwide.In a world driven by competition, those who embrace lifelong learning and adaptability will find themselves ahead of the curve.",
         "Interdisciplinary research combines methodologies from multiple academic fields to solve complex problems.Despite the challenges and setbacks that life throws at us, resilience, determination, and self-belief can turn failures into stepping stones for success.",
       ],
-      expert: [
+      expert: [ 
         "The convergence of artificial general intelligence and bioinformatics has opened unprecedented frontiers in predictive medicine, enabling diagnostic systems to anticipate diseases before symptoms arise, yet simultaneously raising profound ethical questions about data privacy and the limits of machine autonomy.",
         "As the boundaries between digital and biological systems blur through innovations like neural implants and synthetic cognition, philosophers and technologists alike grapple with redefining personhood, identity, and the very essence of human consciousness in a post-organic future.",
         "While the Large Hadron Collider continues to probe the fabric of space-time at subatomic levels, some theorists propose that reality itself may be an emergent simulation governed by computational frameworks far beyond our current understanding of physics or mathematics.",
